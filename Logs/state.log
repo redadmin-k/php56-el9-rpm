@@ -1,0 +1,22 @@
+2026-05-23 07:30:16,564 - Mock Version: 6.7
+2026-05-23 07:30:16,567 - Start(bootstrap): chroot init
+2026-05-23 07:30:16,604 - Start(bootstrap): cleaning package manager metadata
+2026-05-23 07:30:16,605 - Finish(bootstrap): cleaning package manager metadata
+2026-05-23 07:30:16,814 - Finish(bootstrap): chroot init
+2026-05-23 07:30:16,815 - Start: chroot init
+2026-05-23 07:30:16,819 - Start: unpacking root cache
+2026-05-23 07:30:18,058 - Finish: unpacking root cache
+2026-05-23 07:30:18,060 - Start: cleaning package manager metadata
+2026-05-23 07:30:18,065 - Finish: cleaning package manager metadata
+2026-05-23 07:30:18,339 - Start: dnf4 update
+2026-05-23 07:31:12,960 - Finish: dnf4 update
+2026-05-23 07:34:55,420 - Finish: chroot init
+2026-05-23 07:34:55,421 - Start: build phase for php-5.6.40-46.el9.src.rpm
+2026-05-23 07:34:55,421 - Start: build setup for php-5.6.40-46.el9.src.rpm
+2026-05-23 07:51:50,099 - Finish: build setup for php-5.6.40-46.el9.src.rpm
+2026-05-23 07:51:50,100 - Start: rpmbuild php-5.6.40-46.el9.src.rpm
+2026-05-23 07:51:50,100 - Start: Outputting list of installed packages
+2026-05-23 07:51:50,380 - Finish: Outputting list of installed packages
+2026-05-23 08:24:33,905 - Finish: rpmbuild php-5.6.40-46.el9.src.rpm
+2026-05-23 08:24:34,096 - Finish: build phase for php-5.6.40-46.el9.src.rpm
+2026-05-23 08:24:34,100 - Finish: run
