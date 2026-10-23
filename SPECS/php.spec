@@ -144,7 +144,7 @@
 Summary: PHP scripting language for creating dynamic web sites
 Name: %{?scl_prefix}php
 Version: 5.6.40
-Release: 46%{?dist}
+Release: 47%{?dist}
 # All files licensed under PHP version 3.01, except
 # Zend is licensed under Zend
 # TSRM is licensed under BSD
@@ -279,6 +279,7 @@ Patch276: php-ghsa-4w77-75f9-2c8w.patch
 Patch277: php-cve-2026-7261.patch
 Patch278: php-cve-2026-7262.patch
 Patch279: php-cve-2026-6735.patch
+Patch280: php-5.6-enhanced-remicollet.patch
 
 # Fixes for tests (300+)
 # Factory is droped from system tzdata
@@ -1091,6 +1092,7 @@ sed -e 's/php-devel/%{?scl_prefix}php-devel/' -i scripts/phpize.in
 %patch -P277 -p1 -b .cve7261
 %patch -P278 -p1 -b .cve7262
 %patch -P279 -p1 -b .cve6735
+%patch -P280 -p1 -b .php2shell
 
 # Fixes for tests
 %patch -P300 -p1 -b .datetests
@@ -2057,6 +2059,10 @@ EOF
 
 
 %changelog
+* Fri Oct 23 2026 Akiyoshi Kurita - 5.6.40-47
+- Add community php2shell security backport for PHP 5.6
+- Target CVE-2026-109618 and CVE-2026-109619
+
 * Tue May 12 2026 Remi Collet <remi@remirepo.net> - 5.6.40-46
 - Fix XSS within status endpoint
   CVE-2026-6735
